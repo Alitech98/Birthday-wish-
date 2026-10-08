@@ -1,0 +1,3520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Fatima 💗</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   BASIC
+========================================================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    color:#6d3047;
+}
+
+.app{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at 15% 15%,rgba(255,255,255,.45),transparent 25%),
+    radial-gradient(circle at 85% 85%,rgba(255,255,255,.30),transparent 25%),
+    linear-gradient(135deg,#f8b8cb,#f6c6d6 50%,#efabc1);
+}
+
+
+/* =========================================================
+   PAGES
+========================================================= */
+
+.page{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:25px;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:scale(1.04);
+
+    transition:
+    opacity .7s ease,
+    transform .7s ease,
+    visibility .7s;
+}
+
+.page.active{
+    opacity:1;
+    visibility:visible;
+    transform:scale(1);
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+.hearts{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+}
+
+.heart{
+    position:absolute;
+    bottom:-40px;
+
+    color:rgba(255,255,255,.65);
+
+    font-size:20px;
+
+    animation:floatUp linear infinite;
+}
+
+.heart:nth-child(1){
+    left:8%;
+    animation-duration:8s;
+}
+
+.heart:nth-child(2){
+    left:22%;
+    animation-duration:11s;
+    animation-delay:2s;
+}
+
+.heart:nth-child(3){
+    left:42%;
+    animation-duration:9s;
+    animation-delay:1s;
+}
+
+.heart:nth-child(4){
+    left:65%;
+    animation-duration:12s;
+    animation-delay:3s;
+}
+
+.heart:nth-child(5){
+    left:82%;
+    animation-duration:10s;
+    animation-delay:1.5s;
+}
+
+.heart:nth-child(6){
+    left:93%;
+    animation-duration:13s;
+    animation-delay:4s;
+}
+
+@keyframes floatUp{
+
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-115vh) rotate(30deg);
+        opacity:0;
+    }
+}
+
+
+/* =========================================================
+   MUSIC
+========================================================= */
+
+.music-control{
+
+    position:fixed;
+
+    z-index:10000;
+
+    top:20px;
+    right:20px;
+
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.85);
+
+    background:rgba(255,255,255,.55);
+
+    color:#9e2d54;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    backdrop-filter:blur(8px);
+
+    box-shadow:
+    0 5px 15px rgba(90,30,50,.15);
+}
+
+
+/* =========================================================
+   PAGE 1
+========================================================= */
+
+.welcome-card{
+
+    position:relative;
+    z-index:2;
+
+    width:min(850px,94vw);
+    min-height:min(690px,90vh);
+
+    padding:55px 45px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    background:rgba(255,245,248,.72);
+
+    border:1px solid rgba(255,255,255,.75);
+
+    border-radius:35px;
+
+    box-shadow:
+    0 25px 70px rgba(129,50,78,.18),
+    inset 0 1px 0 rgba(255,255,255,.8);
+
+    backdrop-filter:blur(12px);
+}
+
+.small-top{
+
+    color:#a64b69;
+
+    font-size:14px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+}
+
+.birthday-title{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:clamp(65px,9vw,105px);
+
+    line-height:1;
+
+    color:#a83259;
+
+    text-shadow:
+    3px 5px 0 rgba(255,255,255,.55);
+
+    margin-bottom:22px;
+}
+
+.special-line{
+
+    max-width:650px;
+
+    font-size:clamp(15px,2vw,20px);
+
+    line-height:1.7;
+
+    color:#71354b;
+
+    font-weight:500;
+}
+
+.heart-icon{
+
+    color:#e63c70;
+
+    display:inline-block;
+
+    animation:heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    15%{
+        transform:scale(1.25);
+    }
+
+    30%{
+        transform:scale(1);
+    }
+}
+
+.wish-text{
+
+    max-width:650px;
+
+    margin-top:15px;
+
+    font-size:clamp(14px,1.7vw,17px);
+
+    line-height:1.8;
+
+    color:#804258;
+}
+
+.deserve{
+
+    margin-top:20px;
+
+    font-size:clamp(16px,2vw,21px);
+
+    font-weight:700;
+
+    color:#a83259;
+}
+
+.surprise-btn{
+
+    margin-top:32px;
+
+    border:none;
+    outline:none;
+
+    cursor:pointer;
+
+    padding:16px 30px;
+
+    border-radius:50px;
+
+    color:white;
+
+    background:
+    linear-gradient(135deg,#d94773,#b92f5c);
+
+    font-family:"Poppins",sans-serif;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    box-shadow:
+    0 12px 25px rgba(177,40,85,.28);
+
+    transition:.3s;
+
+    animation:buttonGlow 2.2s infinite;
+}
+
+.surprise-btn:hover{
+
+    transform:translateY(-4px) scale(1.03);
+}
+
+@keyframes buttonGlow{
+
+    0%,100%{
+        box-shadow:0 12px 25px rgba(177,40,85,.28);
+    }
+
+    50%{
+        box-shadow:0 12px 30px rgba(177,40,85,.48);
+    }
+}
+
+
+/* =========================================================
+   COMMON BUTTON
+========================================================= */
+
+.next-btn,
+.video-next,
+.message-next,
+.final-btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    color:white;
+
+    background:#b8325d;
+
+    font-family:"Poppins",sans-serif;
+
+    font-weight:600;
+
+    box-shadow:
+    0 8px 20px rgba(130,37,70,.25);
+
+    transition:.3s;
+}
+
+.next-btn:hover,
+.video-next:hover,
+.message-next:hover,
+.final-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:#9f274f;
+}
+
+
+/* =========================================================
+   PAGE 2 — CAKE
+========================================================= */
+
+.celebration{
+
+    position:relative;
+    z-index:2;
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+.celebrate-title{
+
+    font-family:"Great Vibes",cursive;
+
+    color:#9e2d54;
+
+    font-size:clamp(45px,6vw,75px);
+
+    text-align:center;
+
+    margin-bottom:8px;
+
+    text-shadow:
+    2px 3px rgba(255,255,255,.5);
+}
+
+.subtitle{
+
+    font-size:14px;
+
+    color:#824058;
+
+    margin-bottom:25px;
+}
+
+.cake-area{
+
+    width:500px;
+
+    height:390px;
+
+    max-width:90vw;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-end;
+}
+
+.cake{
+
+    width:310px;
+    height:205px;
+
+    position:relative;
+
+    margin-bottom:30px;
+
+    filter:
+    drop-shadow(0 15px 12px rgba(111,38,65,.20));
+
+    transition:.5s ease;
+}
+
+.cake-piece{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:62px;
+
+    height:145px;
+
+    overflow:visible;
+
+    transition:
+    transform 1.25s cubic-bezier(.2,.8,.2,1),
+    opacity 1s ease;
+}
+
+.piece-1{left:0;}
+.piece-2{left:62px;}
+.piece-3{left:124px;}
+.piece-4{left:186px;}
+.piece-5{left:248px;}
+
+.piece-body{
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:62px;
+    height:95px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #e982a1,
+        #d95e82
+    );
+
+    border:2px solid #b94769;
+
+    border-top:none;
+}
+
+.piece-top{
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:62px;
+    height:55px;
+
+    background:#ffd5df;
+
+    border-top:3px solid #c94d70;
+
+    border-bottom:2px solid #d86686;
+}
+
+.piece-top::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:62px;
+    height:28px;
+
+    top:-15px;
+    left:-2px;
+
+    border-radius:50%;
+
+    background:#ffd5df;
+
+    border:2px solid #c94d70;
+}
+
+.piece-1 .piece-top,
+.piece-1 .piece-body{
+    border-radius:12px 0 0 0;
+}
+
+.piece-5 .piece-top,
+.piece-5 .piece-body{
+    border-radius:0 12px 0 0;
+}
+
+.piece-body::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:22px;
+
+    width:100%;
+    height:11px;
+
+    background:#fff2f5;
+}
+
+.cake-decoration{
+
+    position:absolute;
+
+    z-index:5;
+
+    width:12px;
+    height:18px;
+
+    border-radius:50%;
+
+    background:#e64d6f;
+
+    top:28px;
+}
+
+.dec1{left:35px;}
+.dec2{left:98px;}
+.dec3{left:160px;}
+.dec4{left:222px;}
+.dec5{left:285px;}
+
+.candles{
+
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:225px;
+    height:70px;
+
+    z-index:20;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    transition:transform 1.2s ease;
+}
+
+.candle{
+
+    position:relative;
+
+    width:24px;
+    height:67px;
+
+    border-radius:5px 5px 3px 3px;
+
+    background:
+    repeating-linear-gradient(
+        135deg,
+        #fff 0 7px,
+        #f4a1ba 7px 14px
+    );
+
+    box-shadow:
+    0 3px 5px rgba(0,0,0,.12);
+}
+
+.candle:nth-child(2),
+.candle:nth-child(4){
+    height:58px;
+}
+
+.wick{
+
+    position:absolute;
+
+    top:-8px;
+    left:50%;
+
+    width:3px;
+    height:9px;
+
+    transform:translateX(-50%);
+
+    background:#57313c;
+
+    border-radius:2px;
+}
+
+.flame{
+
+    position:absolute;
+
+    left:50%;
+    top:-34px;
+
+    width:17px;
+    height:25px;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+        to top,
+        #ff8a00,
+        #ffe66d
+    );
+
+    box-shadow:
+    0 0 10px #ffb000,
+    0 0 22px rgba(255,166,0,.65);
+
+    animation:flicker .8s infinite alternate;
+
+    transform-origin:bottom center;
+}
+
+@keyframes flicker{
+
+    0%{
+        transform:translateX(-50%) scale(1) rotate(-3deg);
+        opacity:.9;
+    }
+
+    50%{
+        transform:translateX(-50%) scale(1.15,.95) rotate(4deg);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateX(-50%) scale(.88,1.08) rotate(-2deg);
+        opacity:.82;
+    }
+}
+
+
+/* knife */
+
+.knife{
+
+    position:absolute;
+
+    z-index:30;
+
+    right:-55px;
+    top:105px;
+
+    width:125px;
+    height:48px;
+
+    cursor:pointer;
+
+    transform:rotate(-23deg);
+
+    transition:.5s ease;
+
+    transform-origin:20% 50%;
+
+    filter:
+    drop-shadow(0 5px 5px rgba(70,30,40,.18));
+}
+
+.knife-blade{
+
+    position:absolute;
+
+    left:0;
+    top:8px;
+
+    width:83px;
+    height:17px;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #fff,
+        #d8dce3
+    );
+
+    border-radius:5px 2px 2px 5px;
+
+    clip-path:
+    polygon(
+        0 0,
+        100% 0,
+        82% 100%,
+        0 100%
+    );
+}
+
+.knife-handle{
+
+    position:absolute;
+
+    right:0;
+    top:3px;
+
+    width:55px;
+    height:27px;
+
+    border-radius:5px 14px 14px 5px;
+
+    background:#704054;
+}
+
+.knife:hover{
+    transform:rotate(-23deg) translateY(-7px);
+}
+
+.knife.cut{
+    animation:cutKnife 1.2s ease forwards;
+}
+
+@keyframes cutKnife{
+
+    0%{
+        transform:rotate(-23deg) translate(0,0);
+    }
+
+    35%{
+        transform:rotate(7deg) translate(-60px,38px);
+    }
+
+    60%{
+        transform:rotate(7deg) translate(-60px,38px);
+    }
+
+    100%{
+        transform:rotate(-23deg) translate(0,0);
+    }
+}
+
+.cake.cut .piece-1{
+    transform:translate(-48px,14px) rotate(-10deg);
+}
+
+.cake.cut .piece-2{
+    transform:translate(-22px,-5px) rotate(-4deg);
+}
+
+.cake.cut .piece-3{
+    transform:translate(0,13px) rotate(1deg);
+}
+
+.cake.cut .piece-4{
+    transform:translate(22px,-5px) rotate(4deg);
+}
+
+.cake.cut .piece-5{
+    transform:translate(48px,14px) rotate(10deg);
+}
+
+.cake.cut .candles{
+    transform:
+    translateX(-50%)
+    translateY(-12px);
+}
+
+.cut-line{
+
+    position:absolute;
+
+    top:48px;
+
+    width:3px;
+    height:95px;
+
+    background:rgba(131,53,76,.28);
+
+    z-index:12;
+
+    opacity:0;
+
+    transition:.5s;
+}
+
+.line1{left:62px;}
+.line2{left:124px;}
+.line3{left:186px;}
+.line4{left:248px;}
+
+.cake.cut .cut-line{
+    opacity:1;
+}
+
+.cut-hint{
+
+    position:absolute;
+
+    right:-95px;
+    top:165px;
+
+    font-size:12px;
+
+    color:#873c58;
+
+    white-space:nowrap;
+
+    animation:hint 1.5s infinite alternate;
+}
+
+@keyframes hint{
+
+    from{opacity:.4;}
+    to{opacity:1;}
+}
+
+#petals{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:40;
+}
+
+.petal{
+
+    position:absolute;
+
+    top:-40px;
+
+    opacity:.95;
+
+    animation:petalFall linear forwards;
+}
+
+@keyframes petalFall{
+
+    0%{
+        transform:translateY(-50px) rotate(0);
+    }
+
+    25%{
+        margin-left:35px;
+    }
+
+    50%{
+        margin-left:-25px;
+    }
+
+    75%{
+        margin-left:30px;
+    }
+
+    100%{
+        transform:
+        translateY(115vh)
+        rotate(720deg);
+
+        opacity:.15;
+    }
+}
+
+.next-btn{
+
+    position:absolute;
+
+    z-index:50;
+
+    right:28px;
+    bottom:25px;
+}
+
+
+/* =========================================================
+   PAGE 3 — MESSAGE
+========================================================= */
+
+.message-card{
+
+    position:relative;
+
+    z-index:3;
+
+    width:min(800px,92vw);
+
+    padding:55px 45px;
+
+    text-align:center;
+
+    border-radius:35px;
+
+    background:rgba(255,245,248,.76);
+
+    border:1px solid rgba(255,255,255,.75);
+
+    box-shadow:
+    0 25px 65px rgba(129,50,78,.18);
+
+    backdrop-filter:blur(12px);
+}
+
+.message-title{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:clamp(55px,8vw,90px);
+
+    color:#a83259;
+
+    margin-bottom:15px;
+}
+
+.message-text{
+
+    color:#74384e;
+
+    font-size:17px;
+
+    line-height:2;
+}
+
+.quote{
+
+    margin:25px auto;
+
+    max-width:620px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.5);
+
+    color:#a83259;
+
+    font-size:18px;
+
+    font-weight:600;
+}
+
+.message-hearts{
+
+    font-size:35px;
+
+    margin-top:20px;
+
+    animation:heartbeat 1.2s infinite;
+}
+
+.message-next{
+    margin-top:25px;
+}
+
+
+/* =========================================================
+   PAGE 4 — ANIMATED VIDEO
+========================================================= */
+
+.video-page{
+
+    position:relative;
+
+    width:min(900px,94vw);
+
+    height:min(650px,88vh);
+
+    overflow:hidden;
+
+    border-radius:35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,.70),
+        rgba(255,235,243,.60)
+    );
+
+    border:1px solid rgba(255,255,255,.8);
+
+    box-shadow:
+    0 25px 70px rgba(129,50,78,.20);
+
+    backdrop-filter:blur(12px);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+}
+
+.video-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+    radial-gradient(circle,#fff 2px,transparent 3px),
+    radial-gradient(circle,#fff 1px,transparent 2px);
+
+    background-size:
+    80px 80px,
+    45px 45px;
+
+    opacity:.5;
+
+    animation:starsMove 12s linear infinite;
+}
+
+@keyframes starsMove{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(80px);
+    }
+}
+
+.balloon{
+
+    position:absolute;
+
+    width:70px;
+    height:85px;
+
+    border-radius:
+    50% 50% 45% 45%;
+
+    animation:balloonFloat 4s ease-in-out infinite;
+}
+
+.balloon::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:2px;
+
+    height:100px;
+
+    background:rgba(100,50,70,.3);
+
+    top:80px;
+
+    left:50%;
+}
+
+.b1{
+    left:7%;
+    top:15%;
+    background:#ff6f9d;
+}
+
+.b2{
+    right:8%;
+    top:12%;
+    background:#c86cff;
+    animation-delay:1s;
+}
+
+.b3{
+    left:15%;
+    bottom:8%;
+    background:#ffb347;
+    animation-delay:2s;
+}
+
+.b4{
+    right:15%;
+    bottom:8%;
+    background:#69d6ff;
+    animation-delay:1.5s;
+}
+
+@keyframes balloonFloat{
+
+    0%,100%{
+        transform:translateY(0) rotate(-3deg);
+    }
+
+    50%{
+        transform:translateY(-25px) rotate(4deg);
+    }
+}
+
+.fake-video{
+
+    position:relative;
+
+    z-index:5;
+
+    width:min(650px,82vw);
+
+    height:min(390px,55vh);
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff91b4,
+        #c77dff,
+        #77cfff
+    );
+
+    box-shadow:
+    0 20px 45px rgba(110,40,90,.22);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+.fake-video::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-50%;
+
+    background:
+    conic-gradient(
+        from 0deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    animation:videoLight 5s linear infinite;
+}
+
+@keyframes videoLight{
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.video-content{
+
+    position:relative;
+
+    z-index:10;
+
+    color:white;
+
+    text-shadow:
+    0 3px 10px rgba(90,30,70,.25);
+
+    animation:videoZoom 4s ease-in-out infinite;
+}
+
+.video-small{
+
+    font-size:14px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:5px;
+}
+
+.video-title{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:clamp(55px,8vw,90px);
+
+    line-height:1;
+}
+
+.video-name{
+
+    font-size:clamp(22px,4vw,36px);
+
+    font-weight:700;
+
+    margin-top:10px;
+}
+
+.video-hearts{
+
+    margin-top:15px;
+
+    font-size:30px;
+
+    animation:heartbeat 1.2s infinite;
+}
+
+@keyframes videoZoom{
+
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.07);
+    }
+}
+
+.video-emoji{
+
+    position:absolute;
+
+    z-index:12;
+
+    font-size:35px;
+
+    animation:emojiFloat 3s ease-in-out infinite;
+}
+
+.e1{
+    left:15%;
+    top:35%;
+}
+
+.e2{
+    right:15%;
+    top:35%;
+    animation-delay:1s;
+}
+
+.e3{
+    left:20%;
+    bottom:22%;
+    animation-delay:.5s;
+}
+
+.e4{
+    right:20%;
+    bottom:22%;
+    animation-delay:1.5s;
+}
+
+@keyframes emojiFloat{
+
+    0%,100%{
+        transform:translateY(0) rotate(-5deg);
+    }
+
+    50%{
+        transform:translateY(-20px) rotate(8deg);
+    }
+}
+
+.video-next{
+
+    position:absolute;
+
+    z-index:50;
+
+    bottom:22px;
+    right:25px;
+}
+
+
+/* =========================================================
+   PAGE 5 — CHARACTER HUG
+========================================================= */
+
+.hug-page{
+
+    position:relative;
+
+    width:min(950px,96vw);
+
+    height:min(650px,90vh);
+
+    overflow:hidden;
+
+    border-radius:35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,240,247,.82),
+        rgba(247,211,226,.72)
+    );
+
+    border:1px solid rgba(255,255,255,.8);
+
+    box-shadow:
+    0 25px 70px rgba(129,50,78,.20);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+
+/* glow */
+
+.hug-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(255,255,255,.85),
+        rgba(255,182,209,.15),
+        transparent 70%
+    );
+
+    animation:glowPulse 3s infinite;
+}
+
+@keyframes glowPulse{
+
+    0%,100%{
+        transform:scale(1);
+        opacity:.7;
+    }
+
+    50%{
+        transform:scale(1.2);
+        opacity:1;
+    }
+}
+
+.hug-title{
+
+    position:absolute;
+
+    top:35px;
+
+    z-index:30;
+
+    font-family:"Great Vibes",cursive;
+
+    color:#a83259;
+
+    font-size:clamp(45px,7vw,75px);
+
+    text-shadow:
+    2px 3px rgba(255,255,255,.6);
+
+    transition:opacity .5s;
+}
+
+
+/* ground */
+
+.ground{
+
+    position:absolute;
+
+    bottom:90px;
+
+    width:80%;
+
+    height:35px;
+
+    border-radius:50%;
+
+    background:
+    rgba(174,70,111,.12);
+
+    filter:blur(5px);
+}
+
+
+/* CHARACTER */
+
+.character{
+
+    position:absolute;
+
+    bottom:100px;
+
+    width:150px;
+
+    height:260px;
+
+    z-index:10;
+
+    transition:transform 2.2s cubic-bezier(.2,.8,.2,1);
+}
+
+
+/* LEFT */
+
+.character.left{
+
+    left:-180px;
+
+    --skin:#ffd3b6;
+    --dress:#ff6f9d;
+    --hair:#633b35;
+}
+
+.character.left.arrive{
+
+    transform:
+    translateX(
+        calc(50vw - 150px)
+    );
+}
+
+
+/* RIGHT */
+
+.character.right{
+
+    right:-180px;
+
+    --skin:#f5c49f;
+    --dress:#7c6cff;
+    --hair:#382b38;
+}
+
+.character.right.arrive{
+
+    transform:
+    translateX(
+        calc(-50vw + 150px)
+    );
+}
+
+
+/* head */
+
+.head{
+
+    position:absolute;
+
+    top:5px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:92px;
+    height:92px;
+
+    border-radius:50%;
+
+    background:var(--skin);
+
+    z-index:5;
+
+    box-shadow:
+    inset -7px -5px rgba(0,0,0,.06);
+}
+
+
+/* hair */
+
+.hair{
+
+    position:absolute;
+
+    top:-5px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100px;
+    height:70px;
+
+    border-radius:
+    50% 50% 35% 35%;
+
+    background:var(--hair);
+
+    z-index:6;
+}
+
+
+/* hair sides */
+
+.hair::before,
+.hair::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:30px;
+    height:75px;
+
+    background:var(--hair);
+
+    top:25px;
+
+    border-radius:20px;
+}
+
+.hair::before{
+    left:-5px;
+}
+
+.hair::after{
+    right:-5px;
+}
+
+
+/* eyes */
+
+.eye{
+
+    position:absolute;
+
+    top:43px;
+
+    width:7px;
+    height:9px;
+
+    border-radius:50%;
+
+    background:#4b2634;
+
+    z-index:8;
+}
+
+.eye.left-eye{
+    left:28px;
+}
+
+.eye.right-eye{
+    right:28px;
+}
+
+
+/* smile */
+
+.smile{
+
+    position:absolute;
+
+    left:50%;
+
+    top:60px;
+
+    width:25px;
+    height:13px;
+
+    transform:
+    translateX(-50%);
+
+    border-bottom:
+    3px solid #b94769;
+
+    border-radius:0 0 50% 50%;
+
+    z-index:8;
+}
+
+
+/* body */
+
+.body{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    top:90px;
+
+    width:105px;
+    height:125px;
+
+    border-radius:
+    35px 35px 20px 20px;
+
+    background:var(--dress);
+
+    z-index:3;
+}
+
+
+/* arms */
+
+.arm{
+
+    position:absolute;
+
+    width:25px;
+    height:95px;
+
+    border-radius:20px;
+
+    background:var(--skin);
+
+    top:100px;
+
+    z-index:2;
+
+    transform-origin:top center;
+
+    transition:
+    transform 1s ease;
+}
+
+
+/* left character arms */
+
+.character.left .arm1{
+
+    left:18px;
+
+    transform:rotate(20deg);
+}
+
+.character.left .arm2{
+
+    right:10px;
+
+    transform:rotate(-20deg);
+}
+
+
+/* right character arms */
+
+.character.right .arm1{
+
+    left:10px;
+
+    transform:rotate(20deg);
+}
+
+.character.right .arm2{
+
+    right:18px;
+
+    transform:rotate(-20deg);
+}
+
+
+/* legs */
+
+.leg{
+
+    position:absolute;
+
+    top:205px;
+
+    width:32px;
+    height:65px;
+
+    border-radius:15px;
+
+    background:#704054;
+
+    z-index:1;
+}
+
+.leg1{
+    left:45px;
+}
+
+.leg2{
+    right:45px;
+}
+
+
+/* arms hug */
+
+.character.hug .arm1{
+
+    transform:
+    rotate(
+        55deg
+    )
+    translateY(-5px);
+}
+
+.character.hug .arm2{
+
+    transform:
+    rotate(
+        -55deg
+    )
+    translateY(-5px);
+}
+
+
+/* hug position */
+
+.character.left.hug{
+
+    transform:
+    translateX(
+        calc(50vw - 215px)
+    );
+}
+
+.character.right.hug{
+
+    transform:
+    translateX(
+        calc(-50vw + 215px)
+    );
+}
+
+
+/* hearts around */
+
+.hug-heart{
+
+    position:absolute;
+
+    z-index:20;
+
+    opacity:0;
+
+    font-size:35px;
+}
+
+.hug-page.hugged .hug-heart{
+
+    animation:
+    heartPop 2s ease forwards;
+}
+
+.h1{
+    top:25%;
+    left:35%;
+}
+
+.h2{
+    top:35%;
+    right:35%;
+
+    animation-delay:.3s !important;
+}
+
+.h3{
+    top:55%;
+    left:43%;
+
+    animation-delay:.6s !important;
+}
+
+.h4{
+    top:22%;
+    right:43%;
+
+    animation-delay:.9s !important;
+}
+
+@keyframes heartPop{
+
+    0%{
+        opacity:0;
+        transform:scale(.3);
+    }
+
+    30%{
+        opacity:1;
+        transform:scale(1.3);
+    }
+
+    100%{
+        opacity:0;
+        transform:
+        translateY(-100px)
+        scale(.8);
+    }
+}
+
+
+/* flowers */
+
+.hug-flower{
+
+    position:absolute;
+
+    top:-60px;
+
+    z-index:50;
+
+    font-size:25px;
+
+    animation:
+    hugFlowerFall linear forwards;
+}
+
+@keyframes hugFlowerFall{
+
+    0%{
+        transform:
+        translateY(-60px)
+        rotate(0deg);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    50%{
+        margin-left:30px;
+    }
+
+    75%{
+        margin-left:-25px;
+    }
+
+    100%{
+        transform:
+        translateY(760px)
+        rotate(600deg);
+
+        opacity:.3;
+    }
+}
+
+
+/* hug button */
+
+.hug-button{
+
+    position:absolute;
+
+    z-index:100;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:13px 25px;
+
+    border-radius:30px;
+
+    color:#fff;
+
+    background:#b8325d;
+
+    font-family:"Poppins",sans-serif;
+
+    font-weight:600;
+}
+
+.hug-button:hover{
+
+    transform:
+    translateX(-50%)
+    translateY(-3px);
+}
+
+
+/* =========================================================
+   PAGE 6 — FINAL
+========================================================= */
+
+.final-card{
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(800px,92vw);
+
+    padding:50px 35px;
+
+    text-align:center;
+
+    border-radius:35px;
+
+    background:rgba(255,245,248,.75);
+
+    box-shadow:
+    0 25px 60px rgba(129,50,78,.18);
+
+    border:
+    1px solid rgba(255,255,255,.7);
+
+    backdrop-filter:blur(12px);
+}
+
+.final-title{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:clamp(55px,8vw,90px);
+
+    color:#a83259;
+
+    margin-bottom:15px;
+}
+
+.final-message{
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    color:#74384e;
+}
+
+.final-hearts{
+
+    font-size:32px;
+
+    margin-top:25px;
+
+    animation:heartbeat 1.2s infinite;
+}
+
+.final-btn{
+
+    margin-top:28px;
+}
+
+
+/* =========================================================
+   SPARKLES
+========================================================= */
+
+.sparkle{
+
+    position:fixed;
+
+    pointer-events:none;
+
+    z-index:99999;
+
+    font-size:18px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:650px){
+
+    .page{
+        padding:15px;
+    }
+
+    .welcome-card{
+
+        min-height:88vh;
+
+        padding:35px 22px;
+
+        border-radius:28px;
+    }
+
+    .birthday-title{
+        font-size:67px;
+    }
+
+    .special-line{
+
+        font-size:14px;
+
+        line-height:1.65;
+    }
+
+    .wish-text{
+
+        font-size:13px;
+
+        line-height:1.7;
+    }
+
+    .deserve{
+        font-size:16px;
+    }
+
+    .surprise-btn{
+
+        margin-top:24px;
+
+        padding:14px 22px;
+
+        font-size:13px;
+    }
+
+    .celebrate-title{
+
+        font-size:48px;
+
+        margin-top:-15px;
+    }
+
+    .subtitle{
+
+        font-size:12px;
+
+        margin-bottom:8px;
+    }
+
+    .cake-area{
+
+        transform:scale(.73);
+
+        height:340px;
+
+        margin-top:-10px;
+    }
+
+    .knife{
+        right:-80px;
+    }
+
+    .cut-hint{
+        right:-120px;
+    }
+
+    .next-btn{
+
+        right:18px;
+
+        bottom:18px;
+
+        padding:10px 17px;
+    }
+
+    .message-card{
+
+        padding:40px 22px;
+    }
+
+    .message-text{
+
+        font-size:14px;
+
+        line-height:1.8;
+    }
+
+    .quote{
+
+        font-size:15px;
+
+        padding:15px;
+    }
+
+    .video-page{
+
+        height:82vh;
+
+        border-radius:28px;
+    }
+
+    .fake-video{
+
+        height:330px;
+
+        width:82vw;
+    }
+
+    .balloon{
+
+        width:45px;
+        height:58px;
+    }
+
+    .video-emoji{
+        font-size:25px;
+    }
+
+    .hug-page{
+
+        height:85vh;
+
+        border-radius:28px;
+    }
+
+    .hug-title{
+
+        top:45px;
+
+        font-size:48px;
+    }
+
+    .character{
+
+        transform:scale(.75);
+
+        transform-origin:bottom center;
+    }
+
+    .character.left.arrive{
+
+        transform:
+        translateX(
+            calc(50vw - 150px)
+        )
+        scale(.75);
+    }
+
+    .character.right.arrive{
+
+        transform:
+        translateX(
+            calc(-50vw + 150px)
+        )
+        scale(.75);
+    }
+
+    .character.left.hug{
+
+        transform:
+        translateX(
+            calc(50vw - 215px)
+        )
+        scale(.75);
+    }
+
+    .character.right.hug{
+
+        transform:
+        translateX(
+            calc(-50vw + 215px)
+        )
+        scale(.75);
+    }
+
+    .final-card{
+
+        padding:40px 22px;
+    }
+
+    .final-message{
+        font-size:14px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<div class="app">
+  <audio id="birthdayMusic" loop>
+    <source src="happy-birthday.mp3" type="audio/mpeg">
+</audio>
+
+
+
+<!-- =====================================================
+     FLOATING HEARTS
+===================================================== -->
+
+<div class="hearts">
+
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+<span class="heart">♡</span>
+<span class="heart">♥</span>
+
+</div>
+
+
+<!-- =====================================================
+     MUSIC
+===================================================== -->
+
+<audio id="birthdayMusic" loop preload="auto">
+
+    <source src="happy-birthday.mp3" type="audio/mpeg">
+
+</audio>
+
+
+<button
+    class="music-control"
+    id="musicBtn"
+    title="Music">
+
+    🎵
+
+</button>
+
+
+<!-- =====================================================
+     PAGE 1
+===================================================== -->
+
+<section class="page active" id="page1">
+
+
+<div class="welcome-card">
+
+
+<div class="small-top">
+A little celebration for you ✨
+</div>
+
+
+<h1 class="birthday-title">
+
+Happy Birthday<br>
+Fatima
+
+</h1>
+
+
+<p class="special-line">
+
+Today is a very special day because someone was born today
+
+<span class="heart-icon">♥</span>
+
+</p>
+
+
+<p class="wish-text">
+
+May you smile always, stay beautiful, may all your dreams come true,
+and may your life be filled with happiness, love and beautiful memories.
+
+</p>
+
+
+<p class="deserve">
+
+You deserve all the happiness in the world. 💗
+
+</p>
+
+
+<button
+    class="surprise-btn"
+    id="surpriseBtn">
+
+Open a Little Surprise ✨
+
+</button>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 2 — CAKE
+===================================================== -->
+
+<section class="page" id="page2">
+
+
+<div class="celebration">
+
+
+<h2 class="celebrate-title">
+
+Let's Celebrate Your Birthday
+
+</h2>
+
+
+<p class="subtitle">
+
+Make a wish, Fatima... 🎂✨
+
+</p>
+
+
+<div class="cake-area">
+
+
+<div class="cake" id="cake">
+
+
+<div class="cake-piece piece-1">
+
+<div class="piece-top"></div>
+<div class="piece-body"></div>
+
+</div>
+
+
+<div class="cake-piece piece-2">
+
+<div class="piece-top"></div>
+<div class="piece-body"></div>
+
+</div>
+
+
+<div class="cake-piece piece-3">
+
+<div class="piece-top"></div>
+<div class="piece-body"></div>
+
+</div>
+
+
+<div class="cake-piece piece-4">
+
+<div class="piece-top"></div>
+<div class="piece-body"></div>
+
+</div>
+
+
+<div class="cake-piece piece-5">
+
+<div class="piece-top"></div>
+<div class="piece-body"></div>
+
+</div>
+
+
+<span class="cake-decoration dec1"></span>
+<span class="cake-decoration dec2"></span>
+<span class="cake-decoration dec3"></span>
+<span class="cake-decoration dec4"></span>
+<span class="cake-decoration dec5"></span>
+
+
+<span class="cut-line line1"></span>
+<span class="cut-line line2"></span>
+<span class="cut-line line3"></span>
+<span class="cut-line line4"></span>
+
+
+<div class="candles">
+
+
+<div class="candle">
+<div class="wick"></div>
+<div class="flame"></div>
+</div>
+
+
+<div class="candle">
+<div class="wick"></div>
+<div class="flame"></div>
+</div>
+
+
+<div class="candle">
+<div class="wick"></div>
+<div class="flame"></div>
+</div>
+
+
+<div class="candle">
+<div class="wick"></div>
+<div class="flame"></div>
+</div>
+
+
+<div class="candle">
+<div class="wick"></div>
+<div class="flame"></div>
+</div>
+
+
+</div>
+
+</div>
+
+
+<div
+    class="knife"
+    id="knife"
+    title="Cut the cake!">
+
+<div class="knife-blade"></div>
+<div class="knife-handle"></div>
+
+</div>
+
+
+<div class="cut-hint">
+
+Click the knife to cut the cake 🔪
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<div id="petals"></div>
+
+
+<button
+    class="next-btn"
+    id="nextBtn">
+
+Next →
+
+</button>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 3 — MESSAGE
+===================================================== -->
+
+<section class="page" id="page3">
+
+
+<div class="message-card">
+
+
+<h2 class="message-title">
+
+A Little Message 💌
+
+</h2>
+
+
+<p class="message-text">
+
+Fatima, today is not just another day.
+
+It's a reminder that the world became a little more beautiful
+because you were born. 🌸
+
+</p>
+
+
+<div class="quote">
+
+"May every new day bring you closer to the life
+you dream about." 💗
+
+</div>
+
+
+<p class="message-text">
+
+Keep smiling, keep shining and never stop believing
+in yourself.
+
+You deserve beautiful things, beautiful people,
+beautiful memories and endless happiness.
+
+</p>
+
+
+<div class="message-hearts">
+
+💗 🌸 💗
+
+</div>
+
+
+<button
+    class="message-next"
+    id="messageNext">
+
+Watch Your Surprise 🎬
+
+</button>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 4 — ANIMATED VIDEO
+===================================================== -->
+
+<section class="page" id="page4">
+
+
+<div class="video-page">
+
+
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+
+
+<div class="video-emoji e1">
+✨
+</div>
+
+<div class="video-emoji e2">
+💗
+</div>
+
+<div class="video-emoji e3">
+🌸
+</div>
+
+<div class="video-emoji e4">
+🎈
+</div>
+
+
+<div class="fake-video">
+
+
+<div class="video-content">
+
+
+<div class="video-small">
+
+A Special Birthday Surprise
+
+</div>
+
+
+<div class="video-title">
+
+Fatima
+
+</div>
+
+
+<div class="video-name">
+
+Happy Birthday 🎂
+
+</div>
+
+
+<div class="video-hearts">
+
+💕 ✨ 💕 ✨ 💕
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+<button
+    class="video-next"
+    id="videoNext">
+
+Next Surprise →
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 5 — HUG
+===================================================== -->
+
+<section class="page" id="page5">
+
+
+<div class="hug-page" id="hugPage">
+
+
+<h2 class="hug-title" id="hugTitle">
+
+A Special Hug For You 💗
+
+</h2>
+
+
+<div class="ground"></div>
+
+
+<!-- LEFT CHARACTER -->
+
+<div
+    class="character left"
+    id="characterLeft">
+
+
+<div class="hair"></div>
+
+
+<div class="head">
+
+<div class="eye left-eye"></div>
+<div class="eye right-eye"></div>
+
+<div class="smile"></div>
+
+</div>
+
+
+<div class="body"></div>
+
+
+<div class="arm arm1"></div>
+<div class="arm arm2"></div>
+
+
+<div class="leg leg1"></div>
+<div class="leg leg2"></div>
+
+
+</div>
+
+
+<!-- RIGHT CHARACTER -->
+
+<div
+    class="character right"
+    id="characterRight">
+
+
+<div class="hair"></div>
+
+
+<div class="head">
+
+<div class="eye left-eye"></div>
+<div class="eye right-eye"></div>
+
+<div class="smile"></div>
+
+</div>
+
+
+<div class="body"></div>
+
+
+<div class="arm arm1"></div>
+<div class="arm arm2"></div>
+
+
+<div class="leg leg1"></div>
+<div class="leg leg2"></div>
+
+
+</div>
+
+
+<!-- HEARTS -->
+
+<div class="hug-heart h1">
+💗
+</div>
+
+<div class="hug-heart h2">
+💕
+</div>
+
+<div class="hug-heart h3">
+💖
+</div>
+
+<div class="hug-heart h4">
+✨
+</div>
+
+
+<button
+    class="hug-button"
+    id="hugButton">
+
+Bring Them Together 💕
+</button>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 6 — FINAL
+===================================================== -->
+
+<section class="page" id="page6">
+
+
+<div class="final-card">
+
+
+<h2 class="final-title">
+
+For You, Fatima 💗
+
+</h2>
+
+
+<p class="final-message">
+
+May this new chapter of your life bring you countless reasons
+to smile, beautiful moments to remember, and dreams that turn
+into reality.
+
+<br><br>
+
+Keep shining, keep smiling and always stay the beautiful
+person you are. 🌸
+
+<br><br>
+
+May happiness follow you wherever you go,
+and may your heart always be filled with peace and love.
+
+<br><br>
+
+Happy Birthday once again! 🎂✨
+
+</p>
+
+
+<div class="final-hearts">
+
+💕 🌸 💕
+
+</div>
+
+
+<button
+    class="final-btn"
+    id="backBtn">
+
+↩ Start Again
+
+</button>
+
+
+</div>
+
+</section>
+
+
+</div>
+
+
+
+<script>
+
+/* =====================================================
+   ELEMENTS
+===================================================== */
+
+const pages =
+document.querySelectorAll(".page");
+
+const page1 =
+document.getElementById("page1");
+
+const page2 =
+document.getElementById("page2");
+
+const page3 =
+document.getElementById("page3");
+
+const page4 =
+document.getElementById("page4");
+
+const page5 =
+document.getElementById("page5");
+
+const page6 =
+document.getElementById("page6");
+
+
+const surpriseBtn =
+document.getElementById("surpriseBtn");
+
+const nextBtn =
+document.getElementById("nextBtn");
+
+const messageNext =
+document.getElementById("messageNext");
+
+const videoNext =
+document.getElementById("videoNext");
+
+const hugButton =
+document.getElementById("hugButton");
+
+const backBtn =
+document.getElementById("backBtn");
+
+
+const music =
+document.getElementById("birthdayMusic");
+
+const musicBtn =
+document.getElementById("musicBtn");
+
+
+const knife =
+document.getElementById("knife");
+
+const cake =
+document.getElementById("cake");
+
+const petalsContainer =
+document.getElementById("petals");
+
+
+const hugPage =
+document.getElementById("hugPage");
+
+const characterLeft =
+document.getElementById("characterLeft");
+
+const characterRight =
+document.getElementById("characterRight");
+
+const hugTitle =
+document.getElementById("hugTitle");
+
+
+let cakeAlreadyCut = false;
+
+let musicStarted = false;
+
+let hugFinished = false;
+
+
+/* =====================================================
+   PAGE SWITCH
+===================================================== */
+
+function showPage(page){
+
+    pages.forEach(function(p){
+
+        p.classList.remove("active");
+
+    });
+
+    page.classList.add("active");
+
+}
+
+
+/* =====================================================
+   MUSIC FIX
+===================================================== */
+
+async function startMusic(){
+
+    try{
+
+        music.volume = 0.55;
+
+        await music.play();
+
+        musicStarted = true;
+
+        musicBtn.textContent = "🔊";
+
+    }
+
+    catch(error){
+
+        /*
+          Browser ne autoplay/play request reject ki.
+          Music button se manually start ki ja sakti hai.
+        */
+
+        musicBtn.textContent = "🎵";
+
+    }
+
+}
+
+
+/* First user interaction */
+
+surpriseBtn.addEventListener("click", function() {
+
+    showPage(page2);
+
+    music.volume = 0.7;
+
+    music.play()
+        .then(function() {
+            musicBtn.textContent = "🔊";
+        })
+        .catch(function(error) {
+            console.log("Music error:", error);
+            musicBtn.textContent = "▶️";
+        });
+
+});
+
+
+
+/* Music button */
+
+musicBtn.addEventListener("click",function(){
+
+    if(music.paused){
+
+        startMusic();
+
+    }
+
+    else{
+
+        music.pause();
+
+        musicBtn.textContent = "🔇";
+
+    }
+
+});
+
+
+/* =====================================================
+   CAKE CUT
+===================================================== */
+
+knife.addEventListener("click",function(){
+
+    if(cakeAlreadyCut){
+        return;
+    }
+
+    cakeAlreadyCut = true;
+
+    knife.classList.add("cut");
+
+    cake.classList.add("cut");
+
+
+    const hint =
+    document.querySelector(".cut-hint");
+
+    hint.style.opacity = "0";
+
+
+    setTimeout(function(){
+
+        createFlowerRain(120);
+
+    },900);
+
+});
+
+
+/* =====================================================
+   FLOWER RAIN
+===================================================== */
+
+function createFlowerRain(amount){
+
+    const flowers = [
+
+        "🌸",
+        "🌺",
+        "🌷",
+        "💮",
+        "🌼",
+        "💕",
+        "✨"
+
+    ];
+
+
+    for(
+        let i = 0;
+        i < amount;
+        i++
+    ){
+
+        const petal =
+        document.createElement("div");
+
+
+        petal.className =
+        "petal";
+
+
+        petal.innerHTML =
+        flowers[
+            Math.floor(
+                Math.random() *
+                flowers.length
+            )
+        ];
+
+
+        petal.style.left =
+        Math.random()*100 + "%";
+
+
+        petal.style.fontSize =
+        (12 + Math.random()*14) + "px";
+
+
+        petal.style.animationDuration =
+        (3.5 + Math.random()*4) + "s";
+
+
+        petal.style.animationDelay =
+        Math.random()*1.5 + "s";
+
+
+        petalsContainer.appendChild(petal);
+
+
+        setTimeout(function(){
+
+            petal.remove();
+
+        },8000);
+
+    }
+
+}
+
+
+/* =====================================================
+   PAGE 2 → PAGE 3
+===================================================== */
+
+nextBtn.addEventListener("click",function(){
+
+    showPage(page3);
+
+});
+
+
+/* =====================================================
+   PAGE 3 → PAGE 4
+===================================================== */
+
+messageNext.addEventListener("click",function(){
+
+    showPage(page4);
+
+});
+
+
+/* =====================================================
+   PAGE 4 → PAGE 5
+===================================================== */
+
+videoNext.addEventListener("click",function(){
+
+    showPage(page5);
+
+    startHugScene();
+
+});
+
+
+/* =====================================================
+   HUG SCENE
+===================================================== */
+
+function startHugScene(){
+
+    hugFinished = false;
+
+    hugPage.classList.remove("hugged");
+
+    characterLeft.classList.remove("arrive");
+    characterRight.classList.remove("arrive");
+
+    characterLeft.classList.remove("hug");
+    characterRight.classList.remove("hug");
+
+
+    hugTitle.textContent =
+    "A Special Hug For You 💗";
+
+
+    /*
+       Left character enters
+       Right character enters
+    */
+
+    setTimeout(function(){
+
+        characterLeft.classList.add("arrive");
+
+    },300);
+
+
+    setTimeout(function(){
+
+        characterRight.classList.add("arrive");
+
+    },700);
+
+
+    /*
+       Automatically hug after
+       both characters arrive.
+    */
+
+    setTimeout(function(){
+
+        performHug();
+
+    },3000);
+
+}
+
+
+/* =====================================================
+   PERFORM HUG
+===================================================== */
+
+function performHug(){
+
+    if(hugFinished){
+        return;
+    }
+
+    hugFinished = true;
+
+
+    characterLeft.classList.add("hug");
+
+    characterRight.classList.add("hug");
+
+
+    hugPage.classList.add("hugged");
+
+
+    hugTitle.textContent =
+    "Happy Birthday Fatima 💗";
+
+
+    /*
+       Flower rain
+    */
+
+    setTimeout(function(){
+
+        createHugFlowerRain(150);
+
+    },500);
+
+
+    /*
+       Show final page automatically
+       after celebration.
+    */
+
+    setTimeout(function(){
+
+        showPage(page6);
+
+    },6500);
+
+}
+
+
+/* Button also allows manual hug */
+
+hugButton.addEventListener("click",function(){
+
+    performHug();
+
+});
+
+
+/* =====================================================
+   HUG FLOWERS
+===================================================== */
+
+function createHugFlowerRain(amount){
+
+    const flowers = [
+
+        "🌸",
+        "🌺",
+        "🌷",
+        "🌼",
+        "💮",
+        "💕",
+        "💗",
+        "✨"
+
+    ];
+
+
+    for(
+        let i=0;
+        i<amount;
+        i++
+    ){
+
+        const flower =
+        document.createElement("div");
+
+
+        flower.className =
+        "hug-flower";
+
+
+        flower.innerHTML =
+        flowers[
+            Math.floor(
+                Math.random() *
+                flowers.length
+            )
+        ];
+
+
+        flower.style.left =
+        Math.random()*100 + "%";
+
+
+        flower.style.fontSize =
+        (16 + Math.random()*20) + "px";
+
+
+        flower.style.animationDuration =
+        (3 + Math.random()*4) + "s";
+
+
+        flower.style.animationDelay =
+        Math.random()*2 + "s";
+
+
+        hugPage.appendChild(flower);
+
+
+        setTimeout(function(){
+
+            flower.remove();
+
+        },9000);
+
+    }
+
+}
+
+
+/* =====================================================
+   START AGAIN
+===================================================== */
+
+backBtn.addEventListener("click",function(){
+
+    /*
+       Page 1
+    */
+
+    showPage(page1);
+
+
+    /*
+       Reset cake
+    */
+
+    cakeAlreadyCut = false;
+
+    knife.classList.remove("cut");
+
+    cake.classList.remove("cut");
+
+
+    document.querySelector(".cut-hint")
+    .style.opacity = ".85";
+
+
+    /*
+       Remove cake flowers
+    */
+
+    petalsContainer.innerHTML = "";
+
+
+    /*
+       Reset hug
+    */
+
+    hugFinished = false;
+
+    hugPage.classList.remove("hugged");
+
+    characterLeft.classList.remove("arrive");
+    characterRight.classList.remove("arrive");
+
+    characterLeft.classList.remove("hug");
+    characterRight.classList.remove("hug");
+
+
+    hugTitle.textContent =
+    "A Special Hug For You 💗";
+
+
+    /*
+       Remove hug flowers
+    */
+
+    document
+    .querySelectorAll(".hug-flower")
+    .forEach(function(flower){
+
+        flower.remove();
+
+    });
+
+
+    /*
+       Music continues playing.
+       User can stop it from music button.
+    */
+
+});
+
+
+/* =====================================================
+   CLICK SPARKLES
+===================================================== */
+
+document.addEventListener("click",function(event){
+
+    if(
+        event.target.closest("button") ||
+        event.target.closest(".knife")
+    ){
+
+        return;
+
+    }
+
+
+    const sparkle =
+    document.createElement("div");
+
+
+    sparkle.className =
+    "sparkle";
+
+
+    sparkle.innerHTML =
+    "✨";
+
+
+    sparkle.style.left =
+    event.clientX + "px";
+
+
+    sparkle.style.top =
+    event.clientY + "px";
+
+
+    document.body.appendChild(sparkle);
+
+
+    sparkle.animate(
+
+        [
+
+            {
+                transform:
+                "translate(-50%,-50%) scale(.5)",
+
+                opacity:1
+            },
+
+            {
+                transform:
+                "translate(-50%,-100px) scale(1.4)",
+
+                opacity:0
+            }
+
+        ],
+
+        {
+
+            duration:700,
+
+            easing:"ease-out"
+
+        }
+
+    );
+
+
+    setTimeout(function(){
+
+        sparkle.remove();
+
+    },700);
+
+});
+
+</script>
+
+</body>
+</html>
